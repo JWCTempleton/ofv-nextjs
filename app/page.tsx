@@ -1,7 +1,25 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto h-screen">
-      <div className="bg-[linear-gradient(to_right_bottom,rgba(79,70,229,0.5),rgba(49,46,129,0.6)),url('../public/ofv-bg.jpg')] h-[100%] bg-center bg-cover"></div>
+    <main className="max-w-7xl mx-auto h-full bg-[linear-gradient(to_right_bottom,rgba(79,70,229,0.6),rgba(49,46,129,0.66)),url('../public/ofv-bg.jpg')] bg-center bg-cover md:pt-16">
+      <div className="flex flex-col md:flex-row md:justify-center items-center pt-10">
+        <Image
+          src={"/ofv-logo-white.png"}
+          width={200}
+          height={153.2}
+          alt="ofv-logo"
+          quality={100}
+        />
+        <div className="flex flex-col items-center">
+          <p className="text-3xl sm:text-4xl font-bold italic mb-1">
+            Olney Family Vineyard
+          </p>
+          <p className="text-xl sm:text-2xl md:self-end md:mr-[-18px] font-bold ml-4">
+            Winery and Cave
+          </p>
+        </div>
+      </div>
     </main>
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     //linear-gradient(to right bottom,rgba(79, 70, 229,0.2),rgba(49, 46, 129,0.3)),

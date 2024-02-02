@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <div className="grid grid-rows-[60px_1fr_60px]">
+        <div className="grid grid-rows-[66px_minmax(500px,_1fr)_66px] max-w-7xl mx-auto">
           <NavBar />
 
           <div>{children}</div>

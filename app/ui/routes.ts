@@ -10,17 +10,17 @@ import {
 export const routes = [
   {
     title: "Home",
-    href: "#",
+    href: "/",
     Icon: HomeIcon,
   },
   {
     title: "Our Wines",
-    href: "#",
+    href: "/wines",
     Icon: SparklesIcon,
   },
   {
     title: "About",
-    href: "#",
+    href: "/about",
     Icon: QuestionMarkCircleIcon,
   },
   {
