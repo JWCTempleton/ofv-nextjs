@@ -5,14 +5,15 @@ export default function Home() {
     <main className="max-w-7xl mx-auto h-full bg-[linear-gradient(to_right_bottom,rgba(79,70,229,0.6),rgba(49,46,129,0.66)),url('../public/ofv-bg.jpg')] bg-center bg-cover md:pt-16">
       <div className="flex flex-col md:flex-row md:justify-center items-center pt-10">
         <Image
+          className="relative drop-shadow-[0_0_0.3rem_#ffffff70]"
           src={"/ofv-logo-white.png"}
-          width={200}
-          height={153.2}
+          width={190}
+          height={145.5}
           alt="ofv-logo"
           quality={100}
         />
         <div className="flex flex-col items-center">
-          <p className="text-3xl sm:text-4xl font-bold italic mb-1">
+          <p className="text-3xl sm:text-4xl font-bold italic mb-1 relative drop-shadow-[0_0_0.3rem_#ffffff70]">
             Olney Family Vineyard
           </p>
           <p className="text-xl sm:text-2xl md:self-end md:mr-[-18px] font-bold ml-4">

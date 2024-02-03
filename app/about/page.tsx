@@ -21,10 +21,10 @@ export default function Page() {
           orchard that was left as grassland. We nurtured the soil to prepare it
           for wine grapes. The land had never grown wine grapes, which made it
           ideal for our vineyard. With the soil prepared we then choose and
-          planted a little known grape vine from New York State's Hermann J.
-          Wiemer's Vineyard, now locally known as the &quot;Wiemer Clone&quot;.
-          The Wiemer grape vine grown here produces some of the highest quality
-          fruit in Napa Valley.
+          planted a little known grape vine from New York State&apos;s Hermann
+          J. Wiemer&apos;s Vineyard, now locally known as the &quot;Wiemer
+          Clone&quot;. The Wiemer grape vine grown here produces some of the
+          highest quality fruit in Napa Valley.
         </p>
         <p className="text-xs sm:text-base">
           In 2009 we graphed some newly planted rootstock to a special
