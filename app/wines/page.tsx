@@ -1,3 +1,5 @@
+import WineCard from "../ui/WineCard";
+
 const cabSauv = [
   {
     name: "2021 OFV Cab Sauv",
@@ -47,6 +49,7 @@ const Chard = [
     name: "2021 OFV Chardonnay",
     description1: "Bottling Soon - 750ml",
     price: null,
+    description2: undefined,
   },
   {
     name: "2020 OFV Chardonnay",
@@ -67,22 +70,30 @@ export default function Page() {
         </p>
         {cabSauv.map((w) => {
           return (
-            <div
+            <WineCard
               key={w.name}
-              className="ml-5 border-b-2 rounded rounded-b-none p-4 pt-8 pb-8 hover:bg-sky-700 font-bold"
-            >
-              <p>
-                &#x2022; {w.name} - {w.price && `${w.price}`}
-              </p>
-              <p>{w.description1}</p>
-              {w.description2 && <p>{w.description2}</p>}
-            </div>
+              name={w.name}
+              price={w.price}
+              description1={w.description1}
+              description2={w.description2}
+            />
           );
         })}
       </div>
       <div className="">
         <h1 className="text-2xl font-bold italic">Chardonnay - Oak Knoll</h1>
         <p className="ml-1">Estate Grown and Produced</p>
+        {Chard.map((w) => {
+          return (
+            <WineCard
+              key={w.name}
+              name={w.name}
+              price={w.price}
+              description1={w.description1}
+              description2={w.description2}
+            />
+          );
+        })}
       </div>
     </div>
   );
