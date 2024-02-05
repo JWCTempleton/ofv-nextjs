@@ -60,13 +60,16 @@ const Chard = [
 
 export default function Page() {
   return (
-    <div className="max-w-7xl mx-auto flex justify-around mt-5">
-      <div className="">
+    <div className="md:max-w-7xl mx-auto flex flex-col items-center md:items-start md:flex md:flex-row md:gap-[4rem] md:justify-center mt-5">
+      <div className="flex flex-col max-w-max">
         <h1 className="text-2xl font-bold italic">
-          Cabernet Sauvignon - Oak Knoll
+          Cabernet Sauvignon - <br />
+          Oak Knoll
         </h1>
-        <p className=" ml-1">
-          Estate Grown and Produced, aged in our wine cave
+        <p className="ml-1">
+          Estate Grown and Produced,
+          <br />
+          aged in our wine cave
         </p>
         {cabSauv.map((w) => {
           return (

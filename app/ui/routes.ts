@@ -25,7 +25,7 @@ export const routes = [
   },
   {
     title: "Contact",
-    href: "#",
+    href: "/contact",
     Icon: ChatBubbleOvalLeftIcon,
   },
   {
