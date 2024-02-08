@@ -60,8 +60,8 @@ const Chard = [
 
 export default function Page() {
   return (
-    <div className="md:max-w-7xl mx-auto flex flex-col items-center md:items-start md:flex md:flex-row md:gap-[4rem] md:justify-center mt-5">
-      <div className="flex flex-col max-w-max">
+    <div className="md:max-w-7xl mx-auto flex flex-col items-center md:items-start md:flex md:flex-row md:gap-[4rem] md:justify-center mt-5 mb-7">
+      <div className="flex flex-col p-6 mb-6 rounded-xl max-w-max bg-gradient-to-r from-violet-900 to-purple-800 text-center">
         <h1 className="text-2xl font-bold italic">
           Cabernet Sauvignon - <br />
           Oak Knoll
@@ -83,8 +83,11 @@ export default function Page() {
           );
         })}
       </div>
-      <div className="">
-        <h1 className="text-2xl font-bold italic">Chardonnay - Oak Knoll</h1>
+      <div className="flex flex-col p-6 rounded-xl max-w-max bg-gradient-to-r from-purple-800 to-violet-900 text-center">
+        <h1 className="text-2xl font-bold italic text-center">
+          Chardonnay - <br />
+          Oak Knoll
+        </h1>
         <p className="ml-1">Estate Grown and Produced</p>
         {Chard.map((w) => {
           return (

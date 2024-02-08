@@ -9,7 +9,9 @@ export default function Page() {
             src={"/about-img.jpg"}
             fill={true}
             style={{ objectFit: "cover", objectPosition: "40%" }}
+            sizes="(max-width: 160px), (max-width: 190px)"
             alt="flowers"
+            priority
           />
         </div>
 

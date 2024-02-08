@@ -5,12 +5,13 @@ export default function Home() {
     <main className="max-w-7xl mx-auto h-full bg-[linear-gradient(to_right_bottom,rgba(79,70,229,0.65),rgba(49,46,129,0.7)),url('../public/ofv-bg.jpg')] bg-center bg-cover md:pt-16">
       <div className="flex flex-col md:flex-row md:justify-center items-center pt-10">
         <Image
-          className="relative drop-shadow-[0_0_0.3rem_#ffffff70]"
+          className="relative drop-shadow-[0_0_0.3rem_#ffffff70] h-auto"
           src={"/ofv-logo-white.png"}
           width={190}
-          height={145.5}
+          height={145}
           alt="ofv-logo"
           quality={100}
+          priority
         />
         <div className="flex flex-col items-center">
           <p className="text-3xl sm:text-4xl font-bold italic mb-1 relative drop-shadow-[0_0_0.3rem_#ffffff70]">
